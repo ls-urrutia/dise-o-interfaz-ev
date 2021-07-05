@@ -1,4 +1,4 @@
-# Final evaluation of the asignature 'Interface Design' (INACAP) // (Informe en Español abajo)
+# Final evaluation of the asignature 'Interface Design' (INACAP)
 
 * Web application with Bootstrap
 
