@@ -6,4 +6,16 @@
     align-items: center;
   }
 
+  .btn-perfil{
+
+    background-color: white;
+    height: 50px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+  }
+
   
