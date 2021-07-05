@@ -10,6 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
+        <link rel="stylesheet" href="css/styles.css">
+
     <title>Compra y Vende Arte</title>
 
 
@@ -94,7 +96,7 @@
 
     <main>
 
-        <section class="py-5 text-center container bg-secondary"><
+        <section class="py-5 text-center container bg-secondary">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
                     <h1 class="fw-light text-light">Portafolio de #NombreArtista</h1>
@@ -354,9 +356,18 @@
                       </div>
                 </div>
     
-                <div class=" mt-4 col-6">
-                    <input class="col me-5 border-light" type="text" placeholder="Buscar archivo">
-                    <button class="px-1 btn-light">Examinar...</button>
+                <div class="mt-4">
+                    <label for="myfile">Selecciona tu imagen</label>
+        
+                </div>
+                <div class="mt-1">
+                    <input
+                      type="file"
+                      id="myfile"
+                      name="myfile"
+                      accept="image/jpeg"
+                    />
+        
                 </div>
                
                
@@ -365,7 +376,7 @@
                     <a href="#" class="btn btn-secondary border-light my-2">Guardar como borrador</a>
                 </div>
             
-
+            </div>
             
 
 
@@ -373,14 +384,20 @@
 
 
     </main>
-    <hr>
+
+
+    <div class="espacio bg-dark">
+
+    </div>
+ 
     <!-- Footer -->
     <footer class="container-fluid bg-dark py-5 text-center text-light ">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Vero necessitatibus unde aspernatur. Facilis, ab alias? Nesciunt, ducimus a deserunt iure laudantium
-            voluptatum perferendis ipsam libero, ipsum illo laboriosam? Quaerat, autem?</p>
-
-    </footer>
+    
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Vero necessitatibus unde aspernatur. Facilis, ab alias? Nesciunt, ducimus a deserunt iure laudantium voluptatum perferendis ipsam libero, ipsum illo laboriosam? Quaerat, autem?</p>
+        <hr>
+        @2021 - All Right Reserved. Designed and Developed by ls-urrutia
+        </footer>
     <!-- Footer -->
 
 

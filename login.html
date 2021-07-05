@@ -1,146 +1,183 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
 
+    <link rel="stylesheet" href="css/styles.css">
     <title>Compra y Vende Arte</title>
-</head>
+  </head>
 
-<body 
-style="position: relative;"
-data-bs-spy="scroll" 
-data-bs-target="#navbar-id" 
-data-bs-offset="10" 
-class="scrollspy-example" 
-tabindex="0"
->
-
-
+  <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" 
-    id="navbar-id">
-        <div class="container">
-            <a class="navbar-brand" href="/">
-                <i class="bi bi-brush-fill text-white"></i>
-                <span class="align-middle">Asistente de comisiones</span>
-
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-
-                <span class="navbar-toggler-icon"></span>
-
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+      id="navbar-id"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <i class="bi bi-brush-fill text-white"></i>
+          <span class="align-middle">Asistente de comisiones</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/signup.html">Crear cuenta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/login.html"
+                >Iniciar Sesión</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Mi cuenta(Logeado)
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="perfil.html">Perfil</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="portafolio.html">Portafolio</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="comisiones.html">Comisiones</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="calendario.html">Calendario</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex ps-5">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="busqueda"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link"  href="/">Inicio</a>
-                    </li>  
-                    <li class="nav-item">
-                        <a class="nav-link" href="/signup.html">Crear cuenta</a>
-                    </li> 
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/login.html">Iniciar Sesión</a>
-                    </li>                
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Mi cuenta(Logeado)
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="perfil.html">Perfil</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="portafolio.html">Portafolio</a></li>
-                            <li><a class="dropdown-item" href="comisiones.html">Comisiones</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="calendario.html">Calendario</a></li>
-                        </ul>
-                    </li>                 
-                                                                    
-                </ul>  
-                <form class="d-flex ps-5">
-                    <input class="form-control me-2" type="search" placeholder="busqueda" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                  </form>      
-            </div>
+          </form>
         </div>
+      </div>
     </nav>
     <!-- navbar -->
 
- 
-
-<!-- main /form -->
-<div class="container mw-100 bg-secondary text-white h-100 pb-5"
-
->
+    <!-- main /form -->
     <main>
-        <div class="container py-5 mt-5 bg-secondary">   
-            <h1 class="mb-4" >Iniciar Sesión</h1>
-            <form id="formulario">
-                <div class="mb-3 py-3">
-                    <label for="formGroupExampleInput" class="form-label">Usuario</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su nombre de usuario"
-                    required>
-                  </div>
-                  <div class="mb-3 py-2">
-                    <label for="formGroupExampleInput2" class="form-label">Contraseña</label>
-                    <input class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su contraseña"
-                    type="password"
-                    required>
-                  </div>   
-                  <div class="py-5">
-                      <button id="btnEnviar" class="w-100 btn btn-dark" type="submit">
-                          Iniciar sesion
-                      </button>
-                      <button id="btnCargando" class="btn btn-secondary w-100 d-none" type="button" disabled>
-                          <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                          Iniciando sesión...
-                      </button>
-                  </div>              
-            </form>
-    
+      <div class="container mw-100 bg-secondary text-white h-100 pb-5">
+        <div class="container py-5 mt-5 bg-secondary">
+          <h1 class="mb-4">Iniciar Sesión</h1>
+          <form id="formulario">
+            <div class="mb-3 py-3">
+              <label for="formGroupExampleInput" class="form-label"
+                >Usuario</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput"
+                placeholder="Ingrese su nombre de usuario"
+                required
+              />
+            </div>
+            <div class="mb-3 py-2">
+              <label for="formGroupExampleInput2" class="form-label"
+                >Contraseña</label
+              >
+              <input
+                class="form-control"
+                id="formGroupExampleInput2"
+                placeholder="Ingrese su contraseña"
+                type="password"
+                required
+              />
+            </div>
+            <div class="py-5">
+              <button id="btnEnviar" class="w-100 btn btn-dark" type="submit">
+                Iniciar sesion
+              </button>
+              <button
+                id="btnCargando"
+                class="btn btn-secondary w-100 d-none"
+                type="button"
+                disabled
+              >
+                <span
+                  class="spinner-grow spinner-grow-sm"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+                Iniciando sesión...
+              </button>
+            </div>
+          </form>
         </div>
+      </div>
     </main>
+    <!-- main -->
+    <div class="espacio bg-secondary">
 
-</div>
-<!-- main -->
-
-  
-<div class="container bg-dark">
-
-</div>
-<!-- Footer -->
-<footer class="container bg-dark py-5 text-center text-light  
- mw-100 d-inline-block ">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Vero necessitatibus unde aspernatur. Facilis, ab alias? Nesciunt, ducimus a deserunt iure laudantium voluptatum perferendis ipsam libero, ipsum illo laboriosam? Quaerat, autem?</p>
-    
-    </footer>
+    </div>
     <!-- Footer -->
+    <footer class="container-fluid bg-dark py-5 text-center text-light ">
     
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Vero necessitatibus unde aspernatur. Facilis, ab alias? Nesciunt, ducimus a deserunt iure laudantium voluptatum perferendis ipsam libero, ipsum illo laboriosam? Quaerat, autem?</p>
+        <hr>
+        @2021 - All Right Reserved. Designed and Developed by ls-urrutia
+        </footer>
+    <!-- Footer -->
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
 
-        <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="app.js"></script>
 
-
-</body>
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+  </body>
 </html>
